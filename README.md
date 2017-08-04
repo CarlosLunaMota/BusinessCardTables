@@ -1,4 +1,4 @@
-# Logarithms-Business-Card
+# Logarithms in a Business Card
 
 A compact (Decimal) Logarithms Table that fits in a Business Card:
 
