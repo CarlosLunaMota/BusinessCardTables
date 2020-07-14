@@ -1,73 +1,55 @@
 \documentclass[11pt]{article}
+
 \usepackage[paperwidth=5.5cm, paperheight=8.5cm, top=0.0cm, bottom=0.0cm, left=0.0cm, right=0.0cm]{geometry}
 \usepackage[T1]{fontenc}
-\usepackage{graphicx}
 \usepackage{multirow}
-\usepackage{mathtools}
-\usepackage{transparent}
+\usepackage[table]{xcolor}
+\colorlet{ROW}{blue!10}
+\colorlet{CELL}{blue!25}
 
 \pagestyle{empty}
 \setlength{\parindent}{0mm}
 \setlength{\parskip}{0mm}
-\setlength{\tabcolsep}{4pt}
-\usepackage[table]{xcolor}
-
-\definecolor{tableShade}{gray}{0.9}
+\setlength{\tabcolsep}{0.075cm}
 
 \usepackage[pdftex, pdfpagelayout=TwoPageRight, pdfstartview={Fit}, unicode=true,
-    pdftitle={A Log10 Table in a Business Card},    % title
-    pdfauthor={Carlos Luna Mota},     % author
-    pdfsubject={A compact logarithm table by Carlos Luna Mota},   % subject of the document
-    pdfcreator={LaTeX},   % creator of the document
-    pdfproducer={pdflatex}, % producer of the document
-    pdfkeywords={Logarithms} {Carlos Luna Mota} % list of keywords
-    ]{hyperref}
+    pdftitle={A Log10 Table in a Business Card},
+    pdfauthor={Carlos Luna-Mota},
+    pdfsubject={A compact logarithm table by Carlos Luna-Mota},
+    pdfcreator={LaTeX},
+    pdfproducer={pdflatex},
+    pdfkeywords={Logarithms}]{hyperref}
     
-\rowcolors{1}{white}{blue!10}
-\newcount\xrownum
-\makeatletter
- \def\@rowc@lors{\noalign{%
-  \global\advance\xrownum\@ne
-  \ifodd\xrownum
-  \global\advance\rownum\@ne
-  \fi
-  }\@rowcolors}
-\makeatother
-
 \begin{document}
 
-\begin{center}
-\subsubsection*{Decimal Logarithms}
-\vspace{-0.5em}
-\footnotesize
-\colorlet{myBlue}{blue!25}
-\bgroup
-\setlength\tabcolsep{0.075cm}
-\def\arraystretch{0.95}
-\begin{tabular}{cccccc}
-\rowcolor{myBlue} \cellcolor{white}{\scriptsize\textbf{log}} &\textbf{+.0} &\textbf{+.1} &\textbf{+.2} &\textbf{+.3} &\textbf{+.4} \\
-\cellcolor{myBlue}\textbf{1.0} & .\textbf{0}000 & .0414 & .0792 & .\textbf{1}139 & .1461\\
-\cellcolor{myBlue}\textbf{1.5} & .1761 & .\textbf{2}041 & .2304 & .2553 & .2788\\
-\cellcolor{myBlue}\textbf{2.0} & .\textbf{3}010 & .3222 & .3424 & .3617 & .3802\\
-\cellcolor{myBlue}\textbf{2.5} & .3979 & .\textbf{4}150 & .4314 & .4472 & .4624\\
-\cellcolor{myBlue}\textbf{3.0} & .4771 & .4914 & \textbf{5}051 & .5185 & .5315\\
-\cellcolor{myBlue}\textbf{3.5} & .5441 & .5563 & .5682 & .5798 & .5911\\
-\cellcolor{myBlue}\textbf{4.0} & \textbf{.6}021 & .6128 & .6232 & .6335 & .6435\\
-\cellcolor{myBlue}\textbf{4.5} & .6532 & .6628 & .6721 & .6812 & .6902\\
-\cellcolor{myBlue}\textbf{5.0} & .6990 & .\textbf{7}076 & .7160 & .7243 & .7324\\
-\cellcolor{myBlue}\textbf{5.5} & .7404 & .7482 & .7559 & .7634 & .7709\\
-\cellcolor{myBlue}\textbf{6.0} & .7782 & .7853 & .7924 & .7993 & .\textbf{8}062\\
-\cellcolor{myBlue}\textbf{6.5} & .8129 & .8195 & .8261 & .8325 & .8388\\
-\cellcolor{myBlue}\textbf{7.0} & .8451 & .8513 & .8573 & .8633 & .8692\\
-\cellcolor{myBlue}\textbf{7.5} & .8751 & .8808 & .8865 & .8921 & .8976\\
-\cellcolor{myBlue}\textbf{8.0} & .\textbf{9}031 & .9085 & .9138 & .9191 & .9243\\
-\cellcolor{myBlue}\textbf{8.5} & .9294 & .9345 & .9395 & .9445 & .9494\\
-\cellcolor{myBlue}\textbf{9.0} & .9542 & .9590 & .9638 & .9685 & .9731\\ \smallskip
-\cellcolor{myBlue}\textbf{9.5} & .9777 & .9823 & .9868 & .9912 & .9956\\
-\cellcolor{myBlue}$\mathbf{e}$ & \cellcolor{white}.4343 & \multicolumn{4}{c}{\cellcolor{white}} \\
-\cellcolor{myBlue}$\mathbf{\pi}$ & .4971 & \multicolumn{4}{c}{\multirow{-2}{*}{\fbox{$\log_b(x) = \frac{\log(x)}{\log(b)}$}}} \\
-\end{tabular}
-\egroup
-\end{center}
+    \begin{center}
+        \subsubsection*{Decimal Logarithms}
+        \vspace{-0.5em}
+        \footnotesize
+        \def\arraystretch{0.95}
+        \begin{tabular}{clllll}
+            \rowcolor{CELL} \cellcolor{white}{\scriptsize\textbf{log}} &\textbf{$\;+\,$.0} &\textbf{$\;+\,$.1} &\textbf{$\;+\,$.2} &\textbf{$\;+\,$.3} &\textbf{$\;+\,$.4} \\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{1.0} & $\;$\textbf{0}000 & $\;$0414 & $\;$0792 & $\;$\textbf{1}139 & $\;$1461\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{1.5} & $\;$1761 & $\;$\textbf{2}041 & $\;$2304 & $\;$2553 & $\;$2788\\
+            \cellcolor{CELL}\textbf{2.0} & $\;$\textbf{3}010 & $\;$3222 & $\;$3424 & $\;$3617 & $\;$3802\\
+            \cellcolor{CELL}\textbf{2.5} & $\;$3979 & $\;$\textbf{4}150 & $\;$4314 & $\;$4472 & $\;$4624\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{3.0} & $\;$4771 & $\;$4914 & $\;$\textbf{5}051 & $\;$5185 & $\;$5315\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{3.5} & $\;$5441 & $\;$5563 & $\;$5682 & $\;$5798 & $\;$5911\\
+            \cellcolor{CELL}\textbf{4.0} & $\;$\textbf{6}021 & $\;$6128 & $\;$6232 & $\;$6335 & $\;$6435\\
+            \cellcolor{CELL}\textbf{4.5} & $\;$6532 & $\;$6628 & $\;$6721 & $\;$6812 & $\;$6902\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{5.0} & $\;$6990 & $\;$\textbf{7}076 & $\;$7160 & $\;$7243 & $\;$7324\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{5.5} & $\;$7404 & $\;$7482 & $\;$7559 & $\;$7634 & $\;$7709\\
+            \cellcolor{CELL}\textbf{6.0} & $\;$7782 & $\;$7853 & $\;$7924 & $\;$7993 & $\;$\textbf{8}062\\
+            \cellcolor{CELL}\textbf{6.5} & $\;$8129 & $\;$8195 & $\;$8261 & $\;$8325 & $\;$8388\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{7.0} & $\;$8451 & $\;$8513 & $\;$8573 & $\;$8633 & $\;$8692\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{7.5} & $\;$8751 & $\;$8808 & $\;$8865 & $\;$8921 & $\;$8976\\
+            \cellcolor{CELL}\textbf{8.0} & $\;$\textbf{9}031 & $\;$9085 & $\;$9138 & $\;$9191 & $\;$9243\\
+            \cellcolor{CELL}\textbf{8.5} & $\;$9294 & $\;$9345 & $\;$9395 & $\;$9445 & $\;$9494\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{9.0} & $\;$9542 & $\;$9590 & $\;$9638 & $\;$9685 & $\;$9731\\ \rowcolor{ROW}\smallskip
+            \cellcolor{CELL}\textbf{9.5} & $\;$9777 & $\;$9823 & $\;$9868 & $\;$9912 & $\;$9956\\
+            \cellcolor{CELL}$\mathbf{e}$ & $\;$4343 & \\
+            \cellcolor{CELL}$\mathbf{\pi}$ & $\;$4971 & \multicolumn{4}{c}{\multirow{-2}{*}{\fbox{$\log_b(x) = \frac{\log(x)}{\log(b)}$}}} \\
+        \end{tabular}
+    \end{center}
 
 \end{document} 
