@@ -1,4 +1,4 @@
-filename=Logarithms
+filename=BusinessCardTables
 
 pdf: 
 	pdflatex ${filename}.tex

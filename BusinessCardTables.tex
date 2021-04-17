@@ -1,0 +1,83 @@
+\documentclass[11pt]{article}
+
+\usepackage[paperwidth=5.5cm, paperheight=8.5cm, top=0.0cm, bottom=0.0cm, left=0.0cm, right=0.0cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{multirow}
+\usepackage{bm}
+\usepackage[table]{xcolor}
+\colorlet{ROW}{blue!10}
+\colorlet{CELL}{blue!25}
+
+\pagestyle{empty}
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{0mm}
+\setlength{\tabcolsep}{0.075cm}
+
+\usepackage[pdftex, pdfpagelayout=TwoPageRight, pdfstartview={Fit}, unicode=true,
+    pdftitle={Log10 and Sin tables in a Business Card},
+    pdfauthor={Carlos Luna-Mota},
+    pdfsubject={Pocket mathematical tables by Carlos Luna-Mota},
+    pdfcreator={LaTeX},
+    pdfproducer={pdflatex},
+    pdfkeywords={Logarithms, Sines}]{hyperref}
+    
+\begin{document}
+    \begin{center}
+        \subsubsection*{Decimal Logarithms}
+        \vspace{-0.5em}
+        \footnotesize
+        \def\arraystretch{0.95}
+        \begin{tabular}{clllll}
+            \rowcolor{CELL} \cellcolor{white}{\scriptsize\textbf{log}} &\textbf{$\;+\,$.0} &\textbf{$\;+\,$.1} &\textbf{$\;+\,$.2} &\textbf{$\;+\,$.3} &\textbf{$\;+\,$.4} \\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{1.0} & $\;$\textbf{0}000 & $\;$0414 & $\;$0792 & $\;$\textbf{1}139 & $\;$1461\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{1.5} & $\;$1761 & $\;$\textbf{2}041 & $\;$2304 & $\;$2553 & $\;$2788\\
+            \cellcolor{CELL}\textbf{2.0} & $\;$\textbf{3}010 & $\;$3222 & $\;$3424 & $\;$3617 & $\;$3802\\
+            \cellcolor{CELL}\textbf{2.5} & $\;$3979 & $\;$\textbf{4}150 & $\;$4314 & $\;$4472 & $\;$4624\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{3.0} & $\;$4771 & $\;$4914 & $\;$\textbf{5}051 & $\;$5185 & $\;$5315\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{3.5} & $\;$5441 & $\;$5563 & $\;$5682 & $\;$5798 & $\;$5911\\
+            \cellcolor{CELL}\textbf{4.0} & $\;$\textbf{6}021 & $\;$6128 & $\;$6232 & $\;$6335 & $\;$6435\\
+            \cellcolor{CELL}\textbf{4.5} & $\;$6532 & $\;$6628 & $\;$6721 & $\;$6812 & $\;$6902\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{5.0} & $\;$6990 & $\;$\textbf{7}076 & $\;$7160 & $\;$7243 & $\;$7324\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{5.5} & $\;$7404 & $\;$7482 & $\;$7559 & $\;$7634 & $\;$7709\\
+            \cellcolor{CELL}\textbf{6.0} & $\;$7782 & $\;$7853 & $\;$7924 & $\;$7993 & $\;$\textbf{8}062\\
+            \cellcolor{CELL}\textbf{6.5} & $\;$8129 & $\;$8195 & $\;$8261 & $\;$8325 & $\;$8388\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{7.0} & $\;$8451 & $\;$8513 & $\;$8573 & $\;$8633 & $\;$8692\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{7.5} & $\;$8751 & $\;$8808 & $\;$8865 & $\;$8921 & $\;$8976\\
+            \cellcolor{CELL}\textbf{8.0} & $\;$\textbf{9}031 & $\;$9085 & $\;$9138 & $\;$9191 & $\;$9243\\
+            \cellcolor{CELL}\textbf{8.5} & $\;$9294 & $\;$9345 & $\;$9395 & $\;$9445 & $\;$9494\\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{9.0} & $\;$9542 & $\;$9590 & $\;$9638 & $\;$9685 & $\;$9731\\\rowcolor{ROW}\smallskip
+            \cellcolor{CELL}\textbf{9.5} & $\;$9777 & $\;$9823 & $\;$9868 & $\;$9912 & $\;$9956\\
+            \cellcolor{CELL}$\mathbf{e}$ & $\;$4343 & \\
+            \cellcolor{CELL}$\mathbf{\pi}$ & $\;$4971 & \multicolumn{4}{c}{\multirow{-2}{*}{\fbox{$\log_b(x) = \frac{\log(x)}{\log(b)}$}}} \\
+        \end{tabular}
+    \end{center}
+    \newpage
+    \begin{center}
+        \subsubsection*{Sines}
+        \vspace{-0.35em}
+        \footnotesize
+        \def\arraystretch{0.95}
+        \begin{tabular}{clllll}
+            \rowcolor{CELL} \cellcolor{white}{\scriptsize\textbf{sin}} &\textbf{$\;+\,$0$\boldsymbol{^{\circ}}$} &\textbf{$\;+\,$1$\boldsymbol{^{\circ}}$} &\textbf{$\;+\,$2$\boldsymbol{^{\circ}}$} &\textbf{$\;+\,$3$\boldsymbol{^{\circ}}$} &\textbf{$\;+\,$4$\boldsymbol{^{\circ}}$} \\\rowcolor{ROW}
+            \cellcolor{CELL}\textbf{00$\boldsymbol{^{\circ}}$} & $\;$\textbf{0}000 & $\;$0175 & $\;$0349 & $\;$0523 & $\;$0698 \\ \rowcolor{ROW}
+            \cellcolor{CELL}\textbf{05$\boldsymbol{^{\circ}}$} & $\;$0872 & $\;$\textbf{1}045 & $\;$1219 & $\;$1392 & $\;$1564 \\
+            \cellcolor{CELL}\textbf{10$\boldsymbol{^{\circ}}$} & $\;$1736 & $\;$1908 & $\;$\textbf{2}079 & $\;$2250 & $\;$2419 \\
+            \cellcolor{CELL}\textbf{15$\boldsymbol{^{\circ}}$} & $\;$2588 & $\;$2756 & $\;$2924 & $\;$\textbf{3}090 & $\;$3256 \\ \rowcolor{ROW}
+            \cellcolor{CELL}\textbf{20$\boldsymbol{^{\circ}}$} & $\;$3420 & $\;$3584 & $\;$3746 & $\;$3907 & $\;$\textbf{4}067 \\ \rowcolor{ROW}
+            \cellcolor{CELL}\textbf{25$\boldsymbol{^{\circ}}$} & $\;$4226 & $\;$4384 & $\;$4540 & $\;$4695 & $\;$4848 \\
+            \cellcolor{CELL}\textbf{30$\boldsymbol{^{\circ}}$} & $\;$\textbf{5}000 & $\;$5150 & $\;$5299 & $\;$5446 & $\;$5592 \\
+            \cellcolor{CELL}\textbf{35$\boldsymbol{^{\circ}}$} & $\;$5736 & $\;$5878 & $\;$\textbf{6}018 & $\;$6157 & $\;$6293 \\ \rowcolor{ROW}
+            \cellcolor{CELL}\textbf{40$\boldsymbol{^{\circ}}$} & $\;$6428 & $\;$6561 & $\;$6691 & $\;$6820 & $\;$6947 \\ \rowcolor{ROW}
+            \cellcolor{CELL}\textbf{45$\boldsymbol{^{\circ}}$} & $\;$\textbf{7}071 & $\;$7193 & $\;$7314 & $\;$7431 & $\;$7547 \\
+            \cellcolor{CELL}\textbf{50$\boldsymbol{^{\circ}}$} & $\;$7660 & $\;$7771 & $\;$7880 & $\;$7986 & $\;$\textbf{8}090 \\
+            \cellcolor{CELL}\textbf{55$\boldsymbol{^{\circ}}$} & $\;$8192 & $\;$8290 & $\;$8387 & $\;$8480 & $\;$8572 \\ \rowcolor{ROW}
+            \cellcolor{CELL}\textbf{60$\boldsymbol{^{\circ}}$} & $\;$8660 & $\;$8746 & $\;$8829 & $\;$8910 & $\;$8988 \\ \rowcolor{ROW}
+            \cellcolor{CELL}\textbf{65$\boldsymbol{^{\circ}}$} & $\;$\textbf{9}063 & $\;$9135 & $\;$9205 & $\;$9272 & $\;$9336 \\
+            \cellcolor{CELL}\textbf{70$\boldsymbol{^{\circ}}$} & $\;$9397 & $\;$9455 & $\;$9511 & $\;$9563 & $\;$9613 \\
+            \cellcolor{CELL}\textbf{75$\boldsymbol{^{\circ}}$} & $\;$9659 & $\;$9703 & $\;$9744 & $\;$9781 & $\;$9816 \\ \rowcolor{ROW}
+            \cellcolor{CELL}\textbf{80$\boldsymbol{^{\circ}}$} & $\;$9848 & $\;$9877 & $\;$9903 & $\;$9925 & $\;$9945 \\ \rowcolor{ROW} \medskip
+            \cellcolor{CELL}\textbf{85$\boldsymbol{^{\circ}}$} & $\;$9962 & $\;$9976 & $\;$9986 & $\;$9994 & $\;$9998 \\
+            \cellcolor{CELL}$\mathbf{\small rad}$ & $\;$8415 & \multicolumn{4}{c}{\fbox{$\cos(\alpha) = \sin(90^{\circ}-\alpha)$}}\\
+        \end{tabular}
+    \end{center}
+\end{document} 
